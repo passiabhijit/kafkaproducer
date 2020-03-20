@@ -13,7 +13,7 @@ public class Producer {
 	Properties config = new Properties();
 	//config.
 	config.setProperty("client.id", InetAddress.getLocalHost().getHostName());
-	config.setProperty("bootstrap.servers","http://cp-kafka1-kafka.apps.ocpinfradv.pcb-ocp.loblaw.ca:9092");
+	config.setProperty("bootstrap.servers","cp-kafka1:9092");
 	config.put("acks", "all");
 	config.setProperty("key.serializer","org.apache.kafka.common.serialization.StringSerializer");
 	config.setProperty("value.serializer","org.apache.kafka.common.serialization.StringSerializer");
